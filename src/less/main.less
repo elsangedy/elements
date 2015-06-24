@@ -1,0 +1,165 @@
+@import 'utils.less';
+@import 'variables.less';
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: @color-five;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*
+* MARGIN & PADDING
+*/
+.m { margin: 10px; }
+.m--n { margin: 0px; }
+.m--sm { margin: 8px; }
+.m--md { margin: 15px; }
+.m--lg { margin: 20px; }
+
+/*
+* BUTTONS
+*/
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.1s linear;
+  display: inline-block;
+
+  &:hover {
+    transition: all 0.2s linear;
+  }
+
+  &:active {
+    box-shadow: @shadow;
+  }
+}
+
+.btn--one {
+  color: @color-one;
+  border-color: @color-one;
+
+  &:hover {
+    color: #fff;
+    background-color: @color-one;
+  }
+}
+
+.btn--two {
+  color: @color-two;
+  border-color: @color-two;
+
+  &:hover {
+    color: #fff;
+    background-color: @color-two;
+  }
+}
+
+.btn--three {
+  color: @color-three;
+  border-color: @color-three;
+
+  &:hover {
+    color: #fff;
+    background-color: @color-three;
+  }
+}
+
+.btn--four {
+  color: @color-four;
+  border-color: @color-four;
+
+  &:hover {
+    color: #fff;
+    background-color: @color-four;
+  }
+}
+
+.btn--five {
+  color: @color-five;
+  border-color: @color-five;
+
+  &:hover {
+    color: @color-two;
+    background-color: @color-five;
+  }
+}
+
+/*
+* CONTAINER
+*/
+.container {
+  padding: 20px;
+}
+
+.container__title {
+  color: @color-three;
+  font-weight: 700;
+  border-bottom: 1px solid @color-three;
+}
+
+.container__body {
+  display: table;
+}
+
+/*
+* COLORS
+*/
+.box-color {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 20px;
+  box-shadow: @shadow;
+  color: #fff;
+  text-shadow: 0 3px 3px #000;
+  text-align: center;
+  padding: 20px;
+}
+
+.box-color--one {
+  background-color: @color-one;
+}
+
+.box-color--two {
+  background-color: @color-two;
+}
+
+.box-color--three {
+  background-color: @color-three;
+}
+
+.box-color--four {
+  background-color: @color-four;
+}
+
+.box-color--five {
+  background-color: @color-five;
+}

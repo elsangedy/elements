@@ -1,0 +1,8 @@
+.box-shadow(@style, @color) when (iscolor(@color)) {
+  -webkit-box-shadow: @style @color;
+  box-shadow: @style @color;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+  .box(@style, rgba(0, 0, 0, @alpha));
+}
